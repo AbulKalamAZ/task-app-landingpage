@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RememberThat  |  A Task App That Doesn't Stink</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Remember<span>That</span></a>
+
+            <img  class="mobile-menu-open" src="images/menu.svg" alt="Open mobile navigation">
+            
+            <nav class='mobile-nav'>
+
+                <img class="mobile-menu-exit" src="images/exit.svg" alt="Exits mobile navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-button"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-column">
+                <p>It's Nitty &amp; Gritty </p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="secondary-cta">
+                        Watch a video
+                    </a>
+                </div>
+            </div>
+            <div class="right-column">
+                <img class="hero-img" src="images/illustration.svg" alt="hero illustration">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaborations</li>
+                <li>Other Awesome Feature</li>
+            </ul>
+
+            <img class="feature-image" src="images/holding-phone.jpg" alt="A man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container swiper-container">
+            <div class="testimonial-list swiper-wrapper">
+                <div class="swiper-slide card">
+                    <img class="speaker" src="images/person.jpg" alt="Speaker image">
+
+                    <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iusto perferendis dolorem cupiditate molestiae illo quos"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+
+                <div class="swiper-slide card">
+                    <img class="speaker" src="images/person.jpg" alt="Speaker image">
+
+                    <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iusto perferendis dolorem cupiditate molestiae illo quos"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+
+                <div class="swiper-slide card">
+                    <img class="speaker" src="images/person.jpg" alt="Speaker image">
+
+                    <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iusto perferendis dolorem cupiditate molestiae illo quos"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+
+                <div class="swiper-slide card">
+                    <img class="speaker" src="images/person.jpg" alt="Speaker image">
+
+                    <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iusto perferendis dolorem cupiditate molestiae illo quos"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+
+                <div class="swiper-slide card">
+                    <img class="speaker" src="images/person.jpg" alt="Speaker image">
+
+                    <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iusto perferendis dolorem cupiditate molestiae illo quos"</blockquote>
+                    <cite>- John Doe</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="left-column">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input class="name" type="text" name="name">
+
+                    <label for="email">Email</label>
+                    <input class="email" type="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" class="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+            <div class="right-column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14588.828311770616!2d90.2713955!3d23.91772025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sbn!2sbd!4v1613221126964!5m2!1sbn!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>All rights reserved &copy; 2021</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const sendMessageButton = document.querySelector('.submit-button')
+        const openMobileMenuIcon = document.querySelector('.mobile-menu-open')
+        const exitMobileMenuIcon = document.querySelector('.mobile-menu-exit')
+        const mobileNavbar = document.querySelector('.mobile-nav')
+
+
+        // openning and closing mobile navbar
+
+        openMobileMenuIcon.addEventListener('click', function() {
+            
+            mobileNavbar.style.right = '0'
+        })
+
+        exitMobileMenuIcon.addEventListener('click', function() {
+            
+            mobileNavbar.style.right = '-75%'
+        })
+
+        sendMessageButton.addEventListener('click', function sendMessage(e) {
+            e.preventDefault()
+        })
+
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            spaceBetween: 100,
+            slidesPerView: 1
+        });
+        
+    </script>
+</body>
+</html>

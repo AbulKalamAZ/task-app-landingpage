@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 12px;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container .logo {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navbar .container .logo span {
+  color: #007af3;
+}
+
+.navbar .container .mobile-nav {
+  width: 75%;
+  height: 100vh;
+  position: fixed;
+  right: -75%;
+  top: 0;
+  z-index: 999;
+  background: #20272e;
+  color: #ffffff;
+  padding: 2.5em;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+.navbar .container .mobile-nav .mobile-menu-exit {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.navbar .container .mobile-nav ul {
+  list-style: none;
+}
+
+.navbar .container .mobile-nav ul li {
+  margin: 5px 0;
+}
+
+.navbar .container .mobile-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar .mobile-menu-open {
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.hero .container .left-column p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #808080;
+  letter-spacing: 0.2em;
+}
+
+.hero .container .left-column h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.hero .container .left-column .hero-cta .primary-cta {
+  margin-top: 0.5em;
+  padding: 0.5em 1.2em;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ffffff;
+  background: #007af3;
+  display: inline-block;
+  border-radius: 5em;
+}
+
+.hero .container .left-column .hero-cta .secondary-cta {
+  display: block;
+  margin-top: 1em;
+  margin-left: 35px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+.hero .container .left-column .hero-cta .secondary-cta:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  margin-left: -35px;
+  background-image: url("../images//watch.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 15px;
+}
+
+.hero .container .left-column .hero-cta .secondary-cta:hover {
+  text-decoration: underline;
+}
+
+.hero .container .right-column img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+.features {
+  width: 100%;
+  background: #20272e;
+  color: #ffffff;
+}
+
+.features .container {
+  padding: 5em 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .container .features-list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.features .container .features-list li {
+  padding-left: 3em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.features .container .features-list li:before {
+  content: '';
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background: url("../images/bullet.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0.5em;
+}
+
+.features .container .feature-image {
+  display: none;
+}
+
+.testimonial {
+  width: 100%;
+  background: #007af3;
+  color: #ffffff;
+}
+
+.testimonial .container {
+  width: 100%;
+  padding: 5em 2em;
+}
+
+.testimonial .container .testimonial-list .card {
+  background: #006bd6;
+  text-align: center;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 auto 5em auto;
+}
+
+.testimonial .container .testimonial-list .card .speaker {
+  width: 5em;
+  height: 5em;
+  border: 10px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4em;
+}
+
+.testimonial .container .testimonial-list .card blockquote {
+  margin-bottom: 3em;
+}
+
+.testimonial li {
+  background: #006bd6;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact .container {
+  padding: 5em 2em;
+}
+
+.contact .container .left-column h2 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.contact .container .left-column label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.contact .container .left-column input,
+.contact .container .left-column textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+}
+
+.contact .container .left-column .submit-button {
+  background: #006bd6;
+  font-size: 1em;
+  color: #ffffff;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.contact .container .right-column {
+  margin-top: 3em;
+}
+
+.contact .container .right-column iframe {
+  width: 100%;
+  height: 450px;
+}
+
+footer {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .container .mobile-menu-open {
+    display: none;
+  }
+  .navbar .container .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static;
+    right: 0;
+    width: 85%;
+    height: auto;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+  }
+  .navbar .container .mobile-nav .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container .mobile-nav .primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container .mobile-nav .primary-nav li {
+    margin: 0;
+  }
+  .navbar .container .mobile-nav .primary-nav li a {
+    font-weight: 500;
+    color: #000000;
+    padding: 0 1em;
+  }
+  .navbar .container .mobile-nav .secondary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container .mobile-nav .secondary-nav li {
+    margin: 0;
+  }
+  .navbar .container .mobile-nav .secondary-nav li a {
+    font-weight: 500;
+    color: #000000;
+    padding: 0 1em;
+  }
+  .navbar .container .mobile-nav .secondary-nav .go-premium-button a {
+    padding: 0.3em 1em;
+    color: #006bd6;
+    border: 2px solid #006bd6;
+    border-radius: 5em;
+    font-weight: 600;
+    -webkit-transition: 350ms;
+    transition: 350ms;
+  }
+  .navbar .container .mobile-nav .secondary-nav .go-premium-button a:hover {
+    background: #006bd6;
+    color: #ffffff;
+  }
+  .testimonial .container {
+    width: 70%;
+    padding: 5em 2em;
+  }
+  .contact .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    width: 100%;
+    height: 10vh;
+  }
+  .navbar .container {
+    width: 100%;
+    padding: 0.5em 3em;
+  }
+  .hero {
+    width: 100%;
+    height: 90vh;
+  }
+  .hero .container {
+    width: 100%;
+    padding: 5em 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .container .left-column {
+    text-align: left;
+  }
+  .features {
+    width: 100%;
+  }
+  .features .container {
+    width: 100%;
+    padding: 5em 3em;
+  }
+  .testimonial .container {
+    width: 85%;
+    padding: 5em 3em;
+  }
+  .testimonial .container .testimonial-list .card {
+    max-width: 350px;
+  }
+  .contact .container {
+    width: 100%;
+    padding: 5em 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .container .left-column {
+    width: 45%;
+  }
+  .contact .container .right-column {
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
